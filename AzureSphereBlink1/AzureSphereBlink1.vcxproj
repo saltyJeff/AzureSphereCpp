@@ -37,6 +37,7 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="AnnoyingMakeRand.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MakeRand.cpp" />
     <ClCompile Include="uClibcpp\algorithm.cpp" />
@@ -86,13 +87,14 @@
     <UpToDateCheckInput Include="app_manifest.json" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnnoyingMakeRand.h" />
     <ClInclude Include="MakeRand.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalOptions>-Werror=implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-Werror=implicit-function-declaration -fno-rtti %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <LibraryDependencies>applibs;pthread;gcc_s;c</LibraryDependencies>

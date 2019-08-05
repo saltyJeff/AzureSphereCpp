@@ -2,6 +2,8 @@
 class MakeRand
 {
 public:
-	int makeRand();
+	MakeRand();
+	virtual ~MakeRand();
+	virtual int makeRand();
 };
 
