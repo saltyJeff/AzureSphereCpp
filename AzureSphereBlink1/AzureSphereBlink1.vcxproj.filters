@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="uClibcpp">
+      <UniqueIdentifier>{c7e81b2a-9dd6-4398-b76f-1baa011e1c4b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Include="app_manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="uClibcpp\algorithm.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\associative_base.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\bitset.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\char_traits.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\complex.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\del_op.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\del_opnt.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\del_ops.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\del_opv.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\del_opvnt.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\del_opvs.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\deque.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\eh_alloc.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\eh_globals.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\exception.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\func_exception.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\iomanip.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\ios.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\iostream.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\istream.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\iterator.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\limits.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\list.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\locale.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\map.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\new_handler.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\new_op.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\new_opnt.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\new_opv.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\new_opvnt.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\numeric.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\ostream.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\queue.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\set.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\sstream.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\stack.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\stdexcept.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\streambuf.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\string.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\support.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\typeinfo.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\utility.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\valarray.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="uClibcpp\vector.cpp">
+      <Filter>uClibcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeRand.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MakeRand.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

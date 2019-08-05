@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38b52fbc-c90e-43f2-b7d3-d220af9e451f}</ProjectGuid>
+    <Keyword>AzureSphere</Keyword>
+    <RootNamespace>AzureSphereBlink1</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+    <DebugMachineType>Device</DebugMachineType>
+    <PlatformToolset>GCC_AzureSphere_1_0</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <TargetSysroot>2</TargetSysroot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <TargetSysroot>2</TargetSysroot>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MakeRand.cpp" />
+    <ClCompile Include="uClibcpp\algorithm.cpp" />
+    <ClCompile Include="uClibcpp\associative_base.cpp" />
+    <ClCompile Include="uClibcpp\bitset.cpp" />
+    <ClCompile Include="uClibcpp\char_traits.cpp" />
+    <ClCompile Include="uClibcpp\complex.cpp" />
+    <ClCompile Include="uClibcpp\del_op.cpp" />
+    <ClCompile Include="uClibcpp\del_opnt.cpp" />
+    <ClCompile Include="uClibcpp\del_ops.cpp" />
+    <ClCompile Include="uClibcpp\del_opv.cpp" />
+    <ClCompile Include="uClibcpp\del_opvnt.cpp" />
+    <ClCompile Include="uClibcpp\del_opvs.cpp" />
+    <ClCompile Include="uClibcpp\deque.cpp" />
+    <ClCompile Include="uClibcpp\eh_alloc.cpp" />
+    <ClCompile Include="uClibcpp\eh_globals.cpp" />
+    <ClCompile Include="uClibcpp\exception.cpp" />
+    <ClCompile Include="uClibcpp\func_exception.cpp" />
+    <ClCompile Include="uClibcpp\iomanip.cpp" />
+    <ClCompile Include="uClibcpp\ios.cpp" />
+    <ClCompile Include="uClibcpp\iostream.cpp" />
+    <ClCompile Include="uClibcpp\istream.cpp" />
+    <ClCompile Include="uClibcpp\iterator.cpp" />
+    <ClCompile Include="uClibcpp\limits.cpp" />
+    <ClCompile Include="uClibcpp\list.cpp" />
+    <ClCompile Include="uClibcpp\locale.cpp" />
+    <ClCompile Include="uClibcpp\map.cpp" />
+    <ClCompile Include="uClibcpp\new_handler.cpp" />
+    <ClCompile Include="uClibcpp\new_op.cpp" />
+    <ClCompile Include="uClibcpp\new_opnt.cpp" />
+    <ClCompile Include="uClibcpp\new_opv.cpp" />
+    <ClCompile Include="uClibcpp\new_opvnt.cpp" />
+    <ClCompile Include="uClibcpp\numeric.cpp" />
+    <ClCompile Include="uClibcpp\ostream.cpp" />
+    <ClCompile Include="uClibcpp\queue.cpp" />
+    <ClCompile Include="uClibcpp\set.cpp" />
+    <ClCompile Include="uClibcpp\sstream.cpp" />
+    <ClCompile Include="uClibcpp\stack.cpp" />
+    <ClCompile Include="uClibcpp\stdexcept.cpp" />
+    <ClCompile Include="uClibcpp\streambuf.cpp" />
+    <ClCompile Include="uClibcpp\string.cpp" />
+    <ClCompile Include="uClibcpp\support.cpp" />
+    <ClCompile Include="uClibcpp\typeinfo.cpp" />
+    <ClCompile Include="uClibcpp\utility.cpp" />
+    <ClCompile Include="uClibcpp\valarray.cpp" />
+    <ClCompile Include="uClibcpp\vector.cpp" />
+    <UpToDateCheckInput Include="app_manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MakeRand.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalOptions>-Werror=implicit-function-declaration %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>applibs;pthread;gcc_s;c</LibraryDependencies>
+      <AdditionalOptions>-Wl,--no-undefined -nodefaultlibs %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>
